@@ -38,7 +38,7 @@ double Triangulo::perimetro(){
     return v2.calculaDistancia(v1) + v3.calculaDistancia(v2) + v1.calculaDistancia(v3);
 }
 double Triangulo::area(){
-    return 1.0/2 * ( ((v1.getX() * v2.getY()) + (v2.getX() * v3.getY()) + (v3.getX() * v1.getY())) - ((v1.getX() * v3.getY()) + (v3.getX() * v2.getY()) + (v2.getX() * v1.getY())) );
+    return 1.0/2 * abs(( ((v1.getX() * v2.getY()) + (v2.getX() * v3.getY()) + (v3.getX() * v1.getY())) - ((v1.getX() * v3.getY()) + (v3.getX() * v2.getY()) + (v2.getX() * v1.getY()))) );
 }
 std::string Triangulo::str(){
     return v1.str() + ',' + v2.str() + ',' + v3.str();
