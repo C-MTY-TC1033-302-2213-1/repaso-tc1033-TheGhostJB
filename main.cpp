@@ -3,14 +3,14 @@
 //  ComposicionTriangulo
 //
 //  Created by Ma. Guadalupe Roque Díaz de León on 18/05/23.
-//
+//  Modified by Diego Saldaña Gómez A01571609 on 14/05/24
 
 #include <iostream>
 #include <iomanip> // for std::setprecision()
 #include "Punto.hpp"
 #include "Triangulo.hpp"
-
 using namespace std;
+
 int main( ){
     Punto p1{-5, -5}, p2{1, 3}, p3{4, -6};
     Punto p4{-2, -3}, p5{5, -4}, p6{-1,3};
